@@ -12,7 +12,7 @@ We use 6 weeks data as train,last week as valid,retrieve 100 caninates for each 
 
 ### Optimization
 
-we use TreeLite to accelerate lightgbm inference speed (2X faster),catboost-gpu is 30X faster than lightgbm-cpu inference.
-transform all the categorical features(including two way) to label encoding,use reduce_mem_usage,
-create a feature store,save intermediate features files to dictionary , final features to feather,exsiting features will not be create again
-split all the users to 28 group,inference simultaneously with multiple servers.
+- we use TreeLite to accelerate lightgbm inference speed (2X faster),catboost-gpu is 30X faster than lightgbm-cpu inference.
+- transform all the categorical features(including two way) to label encoding,use reduce_mem_usage,
+- create a feature store,save intermediate features files to dictionary , final features to feather,exsiting features will not be create again
+- split all the users to 28 group,inference simultaneously with multiple servers.
